@@ -1,0 +1,23 @@
+{
+    "name": "E06_POVPC",
+    "modelSeeds": [1,2,3,4,5],
+    "sequences": [
+        {"protein": {
+            "id": ["A"],
+            "sequence": "MTQSPTFLAVTASKKVTISCTASESLYSSKHKVHYLAWYQKKPEQSPKLLIYGASNRYIGVPDRFTGSGSGTDFTLTISSVQVEDLTHYYCAQFYSYPLTFGAGTKLELK"
+            }
+        },
+       {"protein": {
+            "id": ["B"],
+            "sequence": "MKLWLNWVFLLTLLHGIQCEVKLVESGGGLVQPGGSLRLSCATSGFTFSDFYMEWVRQPPGKRLEWIAASRNKANDYTTEYSASVKGRFIVSRDTSQSILYLQMNALRAEDTAIYYCARDYYGSSYWYFDVWGAGTTVTVSSES"
+            }
+        },
+        {"ligand": {
+            "id": ["C"],
+            "smiles": "CCCCCCCCCCCCCCCC(=O)OCC(COP(=O)([O-])OCC[N+](C)(C)C)OC(=O)CCCC=O"
+            }
+        }
+    ],
+    "dialect": "alphafold3",
+    "version": 3
+}
