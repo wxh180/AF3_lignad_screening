@@ -1,0 +1,26 @@
+1. Request an interactive job with 16 CPU cores:
+
+salloc -n 16
+
+2. Build the image with the following commands:
+
+cd $TMPDIR
+git clone https://github.com/google-deepmind/alphafold3.git
+cd alphafold3
+buildah bud -f docker/Dockerfile -t af3
+docker save af3 -o af3.rar
+apptainer build af3.sif docker-archive://af3.rar
+
+3. After the build completes, you should have the image file named "af3.sif" in your current working directory. You can copy this file to your home or project directory for later use.
+
+Once the build steps are done, exit the interactive job. On the Cardinal login shell, copy the provided wrapper script:
+
+/apps/alphafold3/3.0.1/run_alphafold.sh
+
+to any preferred place, e,g. $HOME/local/bin/run_alphafold.sh
+
+Then edit the script to update the image path. Replace:
+
+/apps/alphafold3/3.0.1/alphafold3.sif
+
+with the absolute path to your newly built af3.sif image.
