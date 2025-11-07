@@ -1,0 +1,7 @@
+the data pipeline step (CPU-intensive)
+run_alphafold.sh --json_path=<input.json> --norun_inference --output_dir=<output_dir>
+
+the inference step (GPU-required)
+Then, use the processed JSON file in the same output directory for inference:
+
+run_alphafold3 --json_path=<output_dir>/<name>_data.json --norun_data_pipeline
