@@ -1,0 +1,3 @@
+dataset_dir	compound	ligand_resname	protein_chains	ligand_chain	ligand_smiles	ligand_file	enabled
+screen/C19	C19	WXI	A	B	CC(C)C1=CC=C(C=C1)C(C)C(=O)O		true
+screen/GSH	GSH	GSH	A,C	L		screen/GSH/GSH.sdf	true
