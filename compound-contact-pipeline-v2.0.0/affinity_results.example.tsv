@@ -1,0 +1,4 @@
+compound	metric	value	unit	temperature_K	replicate
+C19	Kd	25	nM	298.15	1
+C19	Kd	31	nM	298.15	2
+GSH	IC50	2.1	uM	298.15	1
