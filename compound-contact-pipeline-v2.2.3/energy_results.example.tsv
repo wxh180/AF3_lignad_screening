@@ -1,0 +1,4 @@
+compound	method	value_kcal_mol	structure_id	uncertainty_kcal_mol	reference_compound	replicate
+C19	mmgbsa	-31.2	screen/C19/seed-1/model.cif	1.8		1
+C19	mmgbsa	-29.9	screen/C19/seed-2/model.cif	1.6		2
+GSH	rbfe	1.4		0.4	C19	1
