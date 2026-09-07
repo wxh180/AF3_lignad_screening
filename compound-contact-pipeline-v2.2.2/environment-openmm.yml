@@ -1,0 +1,15 @@
+name: compound-contact-openmm
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - openmm>=8.1
+  - openmmforcefields
+  - openff-toolkit
+  - rdkit
+  - ambertools
+  - biopython>=1.83
+  - freesasa-python>=2.2
+  - numpy>=1.24
+  - matplotlib>=3.7
+  - pytest
